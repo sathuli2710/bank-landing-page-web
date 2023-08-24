@@ -3,19 +3,19 @@ import { stats } from "../constants";
 
 const Stats = () => {
   return (
-    <div className="flex gap-x-[52px] items-center justify-center max-sm:flex-col">
+    <div className="w-full flex flex-col gap-y-[1.25rem] lg:flex-row items-center justify-around">
       {stats.map((stat, idx) => (
         <Fragment key={stat.id}>
-          <div className="flex gap-x-[25px] items-center">
-            <span className="font-[600] text-[40px] leading-[53px]">
+          <div className="flex gap-x-[1.5625rem] items-center">
+            <span className="font-[600] xl:text-[3rem] lg:text-[2rem]">
               {stat.value}
             </span>
-            <span className="text-[20px] leading-[26px] text-gradient uppercase">
+            <span className="xl:text-[1.125rem] lg:text-[1rem] text-gradient uppercase">
               {stat.title}
             </span>
           </div>
           {idx !== stats.length - 1 && (
-            <div className="w-[1px] h-[20px] bg-white max-sm:hidden"></div>
+            <div className="w-[3rem] lg:w-[0.0625rem] xl:h-[2.25rem] lg:h-[2rem] h-[0.0625rem] bg-white"></div>
           )}
         </Fragment>
       ))}

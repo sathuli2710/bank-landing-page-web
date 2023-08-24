@@ -4,8 +4,11 @@ import { ReactComponent as RobotHandIcon } from "../assets/robotHand.svg";
 
 const HeroContent = () => {
   return (
-    <div id="home" className="relative mt-[40px] mb-[80px] w-full px-[150px]">
-      <div className="absolute left-0 top-[-150px]">
+    <div
+      id="home"
+      className="relative mt-[2.5rem] mb-[5rem] w-full px-[9.375rem]"
+    >
+      <div className="absolute left-0 top-[-9.375rem]">
         <svg
           width="580"
           height="1026"
@@ -47,15 +50,17 @@ const HeroContent = () => {
         <span className="ml-2 font-bold text-white">1</span> MONTH ACCOUNT
       </div>
       <div className="flex flex-col">
-        <span className="text-[72px] font-bold tracking-[8px]">The Next</span>
-        <span className="text-[72px] font-bold tracking-[8px] text-gradient">
+        <span className="text-[4.5rem] font-bold tracking-[0.5rem]">
+          The Next
+        </span>
+        <span className="text-[4.5rem] font-bold tracking-[0.5rem] text-gradient">
           Generation
         </span>
-        <span className="text-[72px] font-bold tracking-[8px]">
+        <span className="text-[4.5rem] font-bold tracking-[0.5rem]">
           Payment Method.
         </span>
       </div>
-      <div className="text-white/70 w-[400px] mt-[20px]">
+      <div className="text-white/70 w-[25rem] mt-[1.25rem]">
         Our team of experts uses a methodology to identify the credit cards most
         likely to fit your needs. We examine annual percentage rates, annual
         fees.
@@ -63,7 +68,7 @@ const HeroContent = () => {
       <div className="absolute right-0 top-0">
         <RobotHandIcon width={500} height={500} />
       </div>
-      <div className="absolute right-[-140px] top-[-200px]">
+      <div className="absolute right-[-8.75rem] top-[-12.5rem]">
         <svg
           width="827"
           height="732"

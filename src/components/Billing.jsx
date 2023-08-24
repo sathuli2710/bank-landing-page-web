@@ -3,18 +3,25 @@ import { AppleIcon, GoogleIcon, bill } from "../assets";
 
 const Billing = () => {
   return (
-    <div className="flex max-sm:flex-col max-sm:gap-y-4 gap-x-6 items-center justify-center my-[40px] max-sm:my-[20px]" id="product">
-      <img src={bill} alt="bill image" className="w-[622px]" />
-      <div className="w-[470px] max-sm:w-[622px]">
-        <p className="font-[600] text-[48px] leading-[76px]">
+    <div
+      className="w-full flex flex-col lg:flex-row gap-y-4 items-center justify-between"
+      id="product"
+    >
+      <img
+        src={bill}
+        alt="bill image"
+        className="lg:w-[25rem] md:max-w-[30rem] max-w-[20rem]"
+      />
+      <div className="text-center lg:text-start max-w-[38.875rem]">
+        <p className="font-[600] text-[1.4rem] md:text-[2rem] lg:text-[3rem]">
           Easily control your billing & invoicing.
         </p>
-        <p className="text-[18px] leading-[28px] text-white text-opacity-70 mt-6 max-w-[500px]">
+        <p className="text-[1rem] lg:text-[1.125rem] text-white text-opacity-70 mt-6 max-w-[31.25rem] mb-[1.875rem]">
           Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
           aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
           placerat.
         </p>
-        <span className="mt-[48px] flex items-center gap-x-8">
+        <span className="flex justify-center lg:justify-start items-center gap-x-8">
           <AppleIcon className="cursor-pointer" />
           <GoogleIcon className="cursor-pointer" />
         </span>

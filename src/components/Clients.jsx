@@ -3,16 +3,13 @@ import { clients } from "../constants";
 
 const Clients = () => {
   return (
-    <div
-      className="flex gap-x-[100px] items-center justify-center my-[40px] max-sm:my-[20px] "
-      id="clients"
-    >
+    <div className="w-full flex justify-between items-center" id="clients">
       {clients.map((client) => (
         <img
           key={client.id}
           src={client.logo}
           alt={client.id}
-          className="w-[192px]"
+          className="w-[4rem] md:w-[6rem] lg:w-[12rem]"
         />
       ))}
     </div>
