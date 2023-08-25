@@ -22,7 +22,7 @@ const TakeToTop = () => {
     <a
       className={`${
         isVisible ? "block" : "hidden"
-      } fixed right-8 bottom-16 rounded-full p-4 cursor-pointer bg-blue-gradient grid place-items-center`}
+      } fixed right-2 bottom-2 lg:right-8 lg:bottom-16 rounded-full p-4 cursor-pointer bg-blue-gradient grid place-items-center`}
       href="#navbar"
     >
       <svg
