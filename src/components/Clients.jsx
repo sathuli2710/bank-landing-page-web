@@ -9,7 +9,7 @@ const Clients = () => {
           key={client.id}
           src={client.logo}
           alt={client.id}
-          className="w-[4rem] md:w-[6rem] lg:w-[12rem]"
+          className="w-[20%] lg:max-w-[12rem]"
         />
       ))}
     </div>

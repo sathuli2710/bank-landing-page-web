@@ -10,16 +10,15 @@ import Testimonials from "./components/Testimonials";
 import Billing from "./components/Billing";
 import Footer from "./components/Footer";
 import Layout from "./components/Layout";
+import TakeToTop from "./components/TakeToTop";
 
 const App = () => {
   return (
     <div className="bg-[#00040F] w-full overflow-x-hidden h-screen text-white">
       <Layout>
-        <Navbar />
-      </Layout>
-      <HeroContent />
-      <Layout>
         <div className="w-full flex flex-col gap-y-[2.5rem]">
+          <Navbar />
+          <HeroContent />
           <Stats />
           <Business />
           <Billing />
@@ -28,6 +27,7 @@ const App = () => {
           <Clients />
           <CTA />
           <Footer />
+          <TakeToTop />
         </div>
       </Layout>
     </div>

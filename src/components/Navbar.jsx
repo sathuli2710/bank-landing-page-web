@@ -13,15 +13,15 @@ const NavbarMenuOption = ({ menuText, menuUrl }) => {
 const Navbar = ({}) => {
   const [toggleNavbar, setToggleNavbar] = useState(false);
   return (
-    <div className="w-full z-50">
-      <nav className="flex justify-between items-center px-6 py-4 w-[1170px] z-50 mx-auto">
+    <div className="w-full z-50" id="navbar">
+      <nav className="flex justify-between items-center py-4 z-50 mx-auto">
         <img
           src={logo}
           alt="Hoobank Logo"
-          className="w-[190px] h-[62px] cursor-pointer"
+          className="w-[11.875rem] h-[3.875rem] cursor-pointer"
           onClick={() => window.open("/", "_self")}
         />
-        <ul className="items-center gap-x-[56px] hidden lg:flex">
+        <ul className="items-center gap-x-[3.5rem] hidden lg:flex">
           {navLinks.map((navOption) => (
             <NavbarMenuOption
               key={navOption.id}
@@ -36,7 +36,7 @@ const Navbar = ({}) => {
         >
           {toggleNavbar ? <CloseIcon /> : <MenuIcon />}
           {toggleNavbar && (
-            <div className="absolute top-[40px] right-0 z-20 bg-black-gradient-2 px-6 py-3 rounded-lg sidebar">
+            <div className="w-screen absolute top-[2.5rem] right-[-1.25rem] md:right-[-2.5rem] z-50 bg-black-gradient-2 py-6 rounded-br-lg rounded-bl-lg sidebar">
               <ul className="flex flex-col items-center gap-y-5">
                 {navLinks.map((navOption) => (
                   <NavbarMenuOption

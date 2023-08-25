@@ -1,14 +1,11 @@
 import React from "react";
 import { ReactComponent as DiscountIcon } from "../assets/Discount.svg";
-import { ReactComponent as RobotHandIcon } from "../assets/robotHand.svg";
+import { robot_hand } from "../assets";
 
 const HeroContent = () => {
   return (
-    <div
-      id="home"
-      className="relative mt-[2.5rem] mb-[5rem] w-full px-[9.375rem]"
-    >
-      <div className="absolute left-0 top-[-9.375rem]">
+    <div id="home" className="relative w-full">
+      <div className="hidden lg:block absolute left-[-3.125rem] top-[-9.375rem]">
         <svg
           width="580"
           height="1026"
@@ -44,34 +41,32 @@ const HeroContent = () => {
           </defs>
         </svg>
       </div>
-      <div className="bg-gray-gradient px-3 py-1 rounded-xl text-white/70 inline-flex items-center gap-x-2 justify-start">
-        <DiscountIcon />
-        <span className="font-bold text-white">20%</span> DISCOUNT FOR{" "}
-        <span className="ml-2 font-bold text-white">1</span> MONTH ACCOUNT
+      <div className="w-full flex flex-col items-center lg:items-start">
+        <div className="text-[0.5rem] md:text-[0.8rem] xl:text-[1rem] bg-gray-gradient px-2 md:px-3 py-[2pxrem] md:py-[0.125rem] xl:py-1 rounded-xl text-white text-opacity-70 inline-flex items-center gap-x-2 justify-start">
+          <DiscountIcon className="w-[1.3rem] md:w-[1.8rem] xl:w-[2rem]" />
+          <span className="font-bold text-white">20%</span> DISCOUNT FOR
+          <span className="ml-2 font-bold text-white">1</span> MONTH ACCOUNT
+        </div>
+        <div className="flex flex-col items-center lg:items-start uppercase text-[1.5rem] md:text-[3rem] xl:text-[4.5rem] font-bold tracking-[0.3rem]">
+          <span>The Next</span>
+          <span
+            className="text-gradient"
+            // style={{ textShadow: "0 0 0.1875rem #FF0000, 0 0 0.3125rem #0000FF" }}
+          >
+            Generation
+          </span>
+          <span>Payment Method.</span>
+        </div>
+        <div className="text-center lg:text-start text-white text-[0.5rem] md:text-[0.8rem] xl:text-[1rem] text-opacity-70 w-[15rem] md:w-[25rem] xl:w-[30rem] mt-[1.25rem]">
+          Our team of experts uses a methodology to identify the credit cards
+          most likely to fit your needs. We examine annual percentage rates,
+          annual fees.
+        </div>
       </div>
-      <div className="flex flex-col">
-        <span className="text-[4.5rem] font-bold tracking-[0.5rem]">
-          The Next
-        </span>
-        <span className="text-[4.5rem] font-bold tracking-[0.5rem] text-gradient">
-          Generation
-        </span>
-        <span className="text-[4.5rem] font-bold tracking-[0.5rem]">
-          Payment Method.
-        </span>
-      </div>
-      <div className="text-white/70 w-[25rem] mt-[1.25rem]">
-        Our team of experts uses a methodology to identify the credit cards most
-        likely to fit your needs. We examine annual percentage rates, annual
-        fees.
-      </div>
-      <div className="absolute right-0 top-0">
-        <RobotHandIcon width={500} height={500} />
-      </div>
-      <div className="absolute right-[-8.75rem] top-[-12.5rem]">
+      <div className="hidden lg:block absolute right-[-0.75rem] md:right-[-6.95rem] xl:right-[-8.75rem] top-[6.5rem] md:top-[20.5rem] lg:top-[-18.5rem] xl:top-[-12.5rem] xl:w-[50rem] xl:h-[50rem] lg:w-[37.5rem] lg:h-[50rem]">
         <svg
-          width="827"
-          height="732"
+          width="current"
+          height="current"
           viewBox="0 0 827 732"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -121,6 +116,9 @@ const HeroContent = () => {
             </linearGradient>
           </defs>
         </svg>
+      </div>
+      <div className="hidden lg:block absolute right-[-3.125rem] top-[20rem] lg:top-[-5.625rem] xl:w-[31.25rem] lg:w-[25rem]">
+        <img src={robot_hand} alt="robot_hand" />
       </div>
     </div>
   );
