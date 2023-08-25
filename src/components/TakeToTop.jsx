@@ -4,7 +4,7 @@ const TakeToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 500) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -21,7 +21,7 @@ const TakeToTop = () => {
   return (
     <a
       className={`${
-        !isVisible ? "block" : "hidden"
+        isVisible ? "block" : "hidden"
       } fixed right-8 bottom-16 rounded-full p-4 cursor-pointer bg-blue-gradient grid place-items-center`}
       href="#navbar"
     >
