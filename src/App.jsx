@@ -14,7 +14,7 @@ import TakeToTop from "./components/TakeToTop";
 
 const App = () => {
   return (
-    <div className="bg-[#00040F] w-full overflow-x-hidden h-screen text-white">
+    <div className="bg-[#00040F] w-full overflow-x-hidden text-white">
       <Layout>
         <div className="w-full flex flex-col gap-y-[2.5rem]">
           <Navbar />

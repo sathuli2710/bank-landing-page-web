@@ -14,11 +14,11 @@ const Navbar = ({}) => {
   const [toggleNavbar, setToggleNavbar] = useState(false);
   return (
     <div className="w-full z-50" id="navbar">
-      <nav className="flex justify-between items-center py-4 z-50 mx-auto">
+      <nav className="flex justify-between items-center py-2 md:py-3 lg:py-4 z-50 mx-auto">
         <img
           src={logo}
           alt="Hoobank Logo"
-          className="w-[11.875rem] h-[3.875rem] cursor-pointer"
+          className="w-[6.875rem] h-[1.875rem] md:w-[10.875rem] md:h-[2.875rem] lg:w-[15.875rem] lg:h-[3.875rem] cursor-pointer"
           onClick={() => window.open("/", "_self")}
         />
         <ul className="items-center gap-x-[3.5rem] hidden lg:flex">
