@@ -29,6 +29,17 @@ const App = () => {
           <Footer />
           <TakeToTop />
         </div>
+        <div className="text-stone-400 text-[1.2rem] mb-2">
+          Created by Abul. Click{" "}
+          <a
+            href="https://github.com/sathuli2710/bank-landing-page-web"
+            target="_blank"
+            className="text-gradient"
+          >
+            here
+          </a>{" "}
+          to get the code.
+        </div>
       </Layout>
     </div>
   );
